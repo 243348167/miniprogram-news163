@@ -1,0 +1,15 @@
+.myLoading{
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.myLoadingText{
+  font-size: 16px;
+}
+.myloading{
+  width: 20px;
+  height: 20px;
+  margin-right:8px;
+}

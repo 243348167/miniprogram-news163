@@ -1,0 +1,30 @@
+<view class="page"  wx:if="{{loading}}">
+<myTabBar width="{{'670px'}}" bind:tabBarItemTap="tabBarItemTap" data_tabBar_list="{{data_tabBar_list}}" selected_tabBar="{{selected_tabBar}}"></myTabBar>
+<myMessageBox messageBoxText="{{messageBoxText}}" wx:if="{{isShowMessageBox}}"></myMessageBox>
+<scroll-view 
+style="height:{{scrollHeight}}px;"
+scroll-y="{{true}}" 
+refresher-enabled="{{true}}" 
+bindrefresherrefresh="onRefresh" 
+refresher-triggered="{{isRefresh}}" 
+bindscrolltolower="onReachBottom" 
+scrollTop="{{scrollTop}}" >
+  <view wx:for="{{data_list}}" wx:for-index="idx" wx:for-item="item">
+    <view class="list_item" data-item="{{item}}" bindtap="listItemTap" >
+        <image class="list_image" mode="aspectFill" src="{{item.cover}}"></image>
+        <view class="list_item_header">
+            <text class="news_title">{{item.title}} </text>
+         </view>
+         <view class="list_item_footer">
+            <image class="news_topicImg" mode="aspectFill" src="{{item.topicImg}}"></image>
+            <text class="news_source">{{item.videosource}} </text>
+            <text class="news_replyCount">{{item.votecount}}点赞 </text>
+            <text class="news_replyCount">{{item.replyCount}}回复 </text>
+        </view>
+    </view>
+  </view>
+  <view>
+  <myLoading  wx:if="{{nextLoading}}" ></myLoading>
+</view>
+</scroll-view>
+</view>

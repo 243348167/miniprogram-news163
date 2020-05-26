@@ -1,0 +1,33 @@
+<view class="page"  wx:if="{{loading}}">
+<myTabBar  width="{{'600px'}}"  bind:tabBarItemTap="tabBarItemTap" data_tabBar_list="{{data_tabBar_list}}" selected_tabBar="{{selected_tabBar}}"></myTabBar>
+<myMessageBox messageBoxText="{{messageBoxText}}" wx:if="{{isShowMessageBox}}"></myMessageBox>
+<scroll-view 
+style="height:{{scrollHeight}}px;"
+scroll-y="{{true}}" 
+refresher-enabled="{{true}}" 
+bindrefresherrefresh="onRefresh" 
+refresher-triggered="{{isRefresh}}" 
+bindscrolltolower="onReachBottom" 
+scrollTop="{{scrollTop}}" >
+  <view wx:for="{{data_list}}" wx:for-index="idx" wx:for-item="item">
+    <view class="list_item" data-item="{{item}}" >
+      <text class="news_title">{{item.thread.title}} </text>
+      <view class="comments_head">
+        <text class="comments_head_text">{{item.comments.length}}条跟帖</text>
+      </view>
+      <view class="comments_box" wx:for="{{item.comments}}" wx:for-index="idx_comments" wx:for-item="item_comments">
+        <view class="comments_user">
+          <image class="comments_avatar" mode="aspectFill" src="{{item_comments.user.avatar}}"></image>
+          <text class="comments_nickname">{{item_comments.user.nickname}} </text>
+        </view>
+        <view class="comments_content_box">
+          <text class="comments_content">{{item_comments.content}} </text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view>
+  <myLoading  wx:if="{{nextLoading}}" ></myLoading>
+</view>
+</scroll-view>
+</view>

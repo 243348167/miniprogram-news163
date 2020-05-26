@@ -1,0 +1,13 @@
+<view class="page"  wx:if="{{loading}}">
+  <scroll-view scroll-y='true'  style="height:100%;" scroll-y="{{true}}" >
+    <view class="news_box">
+      <text class="news_title">{{model.title}}</text>
+      <view class="news_info">
+        <text class="news_source">{{model.source}}</text>
+        <text class="news_date">{{model.ptime}}</text>
+      </view>
+      <image class="news_bigger_image" mode="aspectFill" src="{{model.imgsrc}}"></image>
+      <text class="news_content">{{model.digest}}</text>
+    </view>
+  </scroll-view>
+</view>

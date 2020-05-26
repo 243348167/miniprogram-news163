@@ -1,0 +1,3 @@
+<view class="messageBox">
+  <text class="messageBoxText">{{messageBoxText}}</text>
+</view>

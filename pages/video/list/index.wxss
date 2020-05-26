@@ -1,0 +1,40 @@
+.list_image{
+  width: 750rpx; 
+  height: 420rpx; 
+  z-index: -1
+}
+.list_item{
+  height: 480rpx; 
+}
+.news_title{
+  font-size: 18px;
+  color: #fff;
+}
+.news_source{
+  font-size: 12px;
+  color: #B4B4B4;
+}
+.news_replyCount{
+  margin-left: 4px;
+  font-size: 12px;
+  color: #B4B4B4;
+}
+.list_item_footer{
+  width: 750rpx; 
+  height: 60rpx; 
+  padding: 0px 8px;
+  display: flex;
+  align-items: center;
+}
+.list_item_header{
+  width: 750rpx; 
+  height: 410rpx; 
+  margin-top: -420rpx;
+  padding: 0 8px;
+}
+.news_topicImg{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 6px;
+  border-radius: 50%;
+}

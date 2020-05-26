@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "myLoading": "/components/myLoading/index",
+    "myMessageBox": "/components/myMessageBox/index",
+    "myTabBar": "/components/myTabBar/index"
+  }
+}

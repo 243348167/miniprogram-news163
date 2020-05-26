@@ -1,0 +1,52 @@
+<view class="page"  wx:if="{{loading}}">
+<myTabBar  width="{{'600px'}}"  bind:tabBarItemTap="tabBarItemTap" data_tabBar_list="{{data_tabBar_list}}" selected_tabBar="{{selected_tabBar}}"></myTabBar>
+<myMessageBox messageBoxText="{{messageBoxText}}" wx:if="{{isShowMessageBox}}"></myMessageBox>
+<scroll-view 
+style="height:{{scrollHeight}}px;"
+scroll-y="{{true}}" 
+refresher-enabled="{{true}}" 
+bindrefresherrefresh="onRefresh" 
+refresher-triggered="{{isRefresh}}" 
+bindscrolltolower="onReachBottom" 
+scrollTop="{{scrollTop}}" >
+  <view wx:for="{{data_list}}" wx:for-index="idx" wx:for-item="item">
+    <!--封面排版新闻-->
+    <view class="list_item_column" data-item="{{item}}" bindtap="listItemTap" wx:if="{{item.skipType =='special'}}">
+         <text class="news_title_3">{{item.title}} </text>
+         <image class="list_bigger_image" mode="aspectFill" src="{{item.imgsrc}}"></image>
+         <view>
+            <text class="news_source">{{item.source}} </text>
+            <text class="news_replyCount">{{item.commentCount}}跟帖 </text>
+          </view>
+    </view>
+    <!--三联排版新闻-->
+    <view class="list_item_column" data-item="{{item}}" bindtap="listItemTap" wx:elif="{{item.imgextra !=undefined}}">
+         <text class="news_title_3">{{item.title}} </text>
+         <view class="list_item_3_image">
+            <image class="list_small_image" mode="aspectFill" src="{{item.imgsrc}}"></image>
+            <image class="list_small_image" mode="aspectFill" wx:for="{{item.imgextra}}" wx:for-index="idx_imgextra" wx:for-item="item_imgextra" src="{{item_imgextra.imgsrc}}"></image>
+         </view>
+         <view>
+            <text class="news_source">{{item.source}} </text>
+            <text class="news_replyCount">{{item.commentCount}}跟帖 </text>
+         </view>
+    </view>
+    <!--普通排版新闻-->
+    <view class="list_item" data-item="{{item}}" bindtap="listItemTap" wx:elif="{{item.imgextra ==undefined}}">
+        <view class="list_item_left">
+          <text class="news_title">{{item.title}} </text>
+          <view>
+            <text class="news_source">{{item.source}} </text>
+            <text class="news_replyCount">{{item.commentCount}}跟帖 </text>
+          </view>
+        </view>
+        <view class="list_item_right">
+          <image class="list_small_image" mode="aspectFill" src="{{item.imgsrc}}"></image>
+        </view>
+    </view>
+  </view>
+  <view>
+  <myLoading  wx:if="{{nextLoading}}" ></myLoading>
+</view>
+</scroll-view>
+</view>

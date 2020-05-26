@@ -1,0 +1,15 @@
+<view class="page"  wx:if="{{loading}}">
+  <scroll-view scroll-y='true'  style="height:100%;" scroll-y="{{true}}" >
+    <view class="news_box">
+      <video 
+      id="myVideo" 
+      class="news_video"
+      poster="{{model.cover}}"
+      src="{{model.mp4Hd_url}}"
+      show-center-play-btn='{{false}}' 
+      show-play-btn="{{true}}" 
+    ></video>
+      <text class="news_title">{{model.title}}</text>
+    </view>
+  </scroll-view>
+</view>

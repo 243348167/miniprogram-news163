@@ -1,0 +1,17 @@
+.tabBarBox{
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  width:600px;
+}
+.tabBarItem{
+  height: 20px;
+  color: #B4B4B4;
+  display: inline-block;
+  margin-right:18px;
+}
+.tabBarItemActive{
+  height: 20px;
+  margin-right:18px;
+  display: inline-block;
+}

@@ -1,0 +1,7 @@
+<scroll-view scroll-x='true'>  
+<view style="width:{{width}}"  class="tabBarBox">
+  <view data-item="{{item}}"  bindtap="tabBarItemTap" class="{{selected_tabBar.name==item.name?'tabBarItemActive':'tabBarItem'}}" wx:for="{{data_tabBar_list}}" wx:for-index="idx" wx:for-item="item" >
+    <text>{{item.name}}</text>
+  </view>
+</view>
+</scroll-view>

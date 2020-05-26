@@ -1,0 +1,4 @@
+  <view class="myLoading" >
+   <view style="padding-top:2px;"> <image class="myloading" mode="aspectFill" src="/static/utilIco/loading.gif"></image></view>
+   <text class="myLoadingText">正在载入</text>
+  </view>

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/news/list/index",
+    "pages/news/details/index",
+    "pages/video/list/index",
+    "pages/video/details/index",
+    "pages/circle/list/index",
+    "pages/mine/index/index",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#da372b",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/news/list/index",
+        "text": "首页",
+        "iconPath": "static/tabBarIco/newsIco.png",
+        "selectedIconPath": "static/tabBarIco/newsIco_sel.png"
+      },
+      {
+        "pagePath": "pages/video/list/index",
+        "text": "视频",
+        "iconPath": "static/tabBarIco/videoIco.png",
+        "selectedIconPath": "static/tabBarIco/videoIco_sel.png"
+      },
+      {
+        "pagePath": "pages/circle/list/index",
+        "text": "圈子",
+        "iconPath": "static/tabBarIco/circleIco.png",
+        "selectedIconPath": "static/tabBarIco/circleIco_sel.png"
+      },
+      {
+        "pagePath": "pages/mine/index/index",
+        "text": "我的",
+        "iconPath": "static/tabBarIco/mineIco.png",
+        "selectedIconPath": "static/tabBarIco/mineIco_sel.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#da372b",
+    "navigationBarTitleText": "网悦阅读精选",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
