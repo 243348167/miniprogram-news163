@@ -1,12 +1,13 @@
 # 目录
-[微信小程序网悦新闻开发--功能介绍（一）](https://blog.csdn.net/qq243348167/article/details/106275643)
-[微信小程序网悦新闻开发--小程序配置（二）](https://blog.csdn.net/qq243348167/article/details/106301634)
-[微信小程序网悦新闻开发--首页模块开发（三）](https://blog.csdn.net/qq243348167/article/details/106302146)
-[微信小程序网悦新闻开发--视频模块开发（四）](https://blog.csdn.net/qq243348167/article/details/106348737)
-[微信小程序网悦新闻开发--我的模块开发（五）](https://blog.csdn.net/qq243348167/article/details/106349943)
-[微信小程序网悦新闻开发--自定义组件开发（六）](https://blog.csdn.net/qq243348167/article/details/106350625)
+[微信小程序网悦新闻开发--功能介绍（一）](https://blog.csdn.net/qq243348167/article/details/106275643)  
+[微信小程序网悦新闻开发--小程序配置（二）](https://blog.csdn.net/qq243348167/article/details/106301634)  
+[微信小程序网悦新闻开发--首页模块开发（三）](https://blog.csdn.net/qq243348167/article/details/106302146)  
+[微信小程序网悦新闻开发--视频模块开发（四）](https://blog.csdn.net/qq243348167/article/details/106348737)  
+[微信小程序网悦新闻开发--我的模块开发（五）](https://blog.csdn.net/qq243348167/article/details/106349943)  
+[微信小程序网悦新闻开发--自定义组件开发（六）](https://blog.csdn.net/qq243348167/article/details/106350625)  
 
-![图片alt](https://img-blog.csdnimg.cn/20200522131329404.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxMjQzMzQ4MTY3,size_16,color_FFFFFF,t_70 ''图片title'')
+<img alt="" height="500" src="https://img-blog.csdnimg.cn/20200522131329404.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxMjQzMzQ4MTY3,size_16,color_FFFFFF,t_70" width="281">  
+
 # 小程序介绍
 网悦新闻小程序是通过调用网易新闻api接口制作的新闻类阅读小程序，该小程序只是对微信小程序开发感兴趣的新手提供一些参考和帮助，并非用于商业用途。项目主要由首页、视频、圈子和我的4个模块组成，首先先给大家展示一下项目运行的效果，稍后会为大家详细介绍每个模块的功能。
 
